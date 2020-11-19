@@ -1,7 +1,7 @@
 <template>
 	<div class="car-container">
-		<el-carousel indicator-position="none" height="12rem" arrow="never" autoplay="true" interval="5000" >
-			<el-carousel-item v-for="item in imgList" :key="item">
+		<el-carousel indicator-position="none" height="12rem" arrow="never" :autoplay="true" :interval="5000" >
+			<el-carousel-item v-for="(item, index) in imgList" :key="index">
 				<img :src="item.url" @load="img_load" ref='img_ref'/>
 			</el-carousel-item>
 		</el-carousel>
@@ -21,6 +21,7 @@ export default {
                 {url:require('../assets/1.jpg')},
                 {url:require('../assets/3.jpg')},
                 {url:require('../assets/4.jpg')},
+                {url:require('../assets/8.jpg')},
             ],
             img_height:''
         }

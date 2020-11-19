@@ -1,13 +1,10 @@
 <template>
     <div class="latestNotes-container">
-        <div class="latest">
+        <!-- <div class="latest">
             <img :src="LatestURL.url" ref='img_ref'/>
-        </div>
+        </div> -->
          <el-divider content-position="left">The Latest Notes</el-divider>
-         <div class="latestNotes">
-             <NotesCard></NotesCard>
-             <NotesCard></NotesCard>
-         </div>
+         
     </div>
 </template>
 

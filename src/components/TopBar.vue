@@ -3,7 +3,6 @@
       <el-menu :default-active="activeIndex" 
       class="topbar" 
       mode="horizontal" 
-      @select="handleSelect" 
       background-color = "#F0FFFF" 
       text-color = "black" 
       active-text-color = "	#4169E1" 
@@ -12,9 +11,9 @@
         <el-submenu index="2" v-if="isPhone">
           <template slot="title">菜单</template>
           <el-menu-item index="2-1">首页</el-menu-item>
-          <el-menu-item index="2-2">笔记广场</el-menu-item>
+          <el-menu-item index="2-2" @click="toNotesRound">笔记广场</el-menu-item>
           <el-menu-item index="2-3">工具箱</el-menu-item>
-          <el-menu-item index="2-4">关于我</el-menu-item>
+          <el-menu-item index="2-4" @click="toAbout">关于我</el-menu-item>
           <!-- <el-submenu index="2-4">
             <template slot="title">选项4</template>
             <el-menu-item index="2-4-1">选项1</el-menu-item>
@@ -22,9 +21,9 @@
             <el-menu-item index="2-4-3">选项3</el-menu-item>
           </el-submenu> -->
         </el-submenu>
-        <el-menu-item index="3" v-if="!isPhone">文章广场</el-menu-item>
+        <el-menu-item index="3" v-if="!isPhone" @click="toNotesRound">笔记广场</el-menu-item>
         <el-menu-item index="4" v-if="!isPhone">工具箱</el-menu-item>
-        <el-menu-item index="5" v-if="!isPhone">关于我</el-menu-item>
+        <el-menu-item index="5" v-if="!isPhone" @click="toAbout">关于我</el-menu-item>
       </el-menu>
     </div>
 </template>
@@ -44,7 +43,13 @@
         console.log(key, keyPath);
       },
       toMainPage: function() {
-          this.$router.push("/MainPage");
+        this.$router.push("/MainPage");
+      },
+      toNotesRound: function() {
+        this.$router.push('/NotesRound');
+      },
+      toAbout: function() {
+        this.$router.push('/About');
       }
     },
     watch: {

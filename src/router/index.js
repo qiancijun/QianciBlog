@@ -22,7 +22,17 @@ const routes = [
     path: '/MainPage',
     name: 'MainPage',
     component: () => import('@/views/MainPage.vue')
-  }
+  },
+  {
+    path: '/NotesRound',
+    name: 'NotesRound',
+    component: () => import('@/views/NotesRound.vue')
+  },
+  {
+    path: '/About',
+    name: 'About',
+    component: () => import('@/views/About.vue')
+  },
 ]
 
 const router = new VueRouter({
