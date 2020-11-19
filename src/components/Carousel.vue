@@ -9,8 +9,6 @@
     <div class="introduction">
         <p>WelCome To</p>
         <p>Qianci's Blog</p>
-        <p>QQ:769303522</p>
-        <a href="https://github.com/qiancijun">Github</a>
     </div>
 	</div>
 </template>
@@ -81,10 +79,10 @@ export default {
     }
     .introduction {
       display: inline-block;
-      width: 5rem;
+      width: 6rem;
       height: 3rem;
       position: absolute;
-      top: 50%;
+      top: 6rem;
       left: 5%;
       z-index: 5;
       border: 1px solid white;
@@ -92,14 +90,14 @@ export default {
       p {
         font-size: 0.4rem;
         color: white;
-        line-height: 0.4rem;
+        line-height: 1rem;
         margin: 0.2rem 0.2rem;
       }
       a {
 
-        font-size: 0.4rem;
+        font-size: 0.2rem;
         color: white;
-        line-height: 0.4rem;
+        line-height: 0.5rem;
         margin: 0.2rem 0.2rem;
       }
     }

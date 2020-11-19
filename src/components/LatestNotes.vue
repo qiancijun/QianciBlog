@@ -1,7 +1,7 @@
 <template>
     <div class="latestNotes-container">
         <div class="latest">
-            <img :src="LatestURL.url" @load="img_load" ref='img_ref'/>
+            <img :src="LatestURL.url" ref='img_ref'/>
         </div>
          <el-divider content-position="left">The Latest Notes</el-divider>
          <div class="latestNotes">
