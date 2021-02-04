@@ -1,5 +1,5 @@
 <template>
-     <div id="topbar">
+     <div id="topbar" v-if="!$route.meta.isAdmin">
       <el-menu :default-active="activeIndex" 
       class="topbar" 
       mode="horizontal" 
@@ -10,7 +10,7 @@
         <el-menu-item index="1" @click="toMainPage" v-if="!isPhone">首页</el-menu-item>
         <el-submenu index="2" v-if="isPhone">
           <template slot="title">菜单</template>
-          <el-menu-item index="2-1">首页</el-menu-item>
+          <el-menu-item index="2-1" @click="toMainPage">首页</el-menu-item>
           <el-menu-item index="2-2" @click="toNotesRound">笔记广场</el-menu-item>
           <el-menu-item index="2-3">工具箱</el-menu-item>
           <el-menu-item index="2-4" @click="toAbout">关于我</el-menu-item>
@@ -46,7 +46,12 @@
         this.$router.push("/MainPage");
       },
       toNotesRound: function() {
-        this.$router.push('/NotesRound');
+        this.$router.push({
+          name: 'NotesRound',
+          params: {
+            p_id: 0,
+          }
+        });
       },
       toAbout: function() {
         this.$router.push('/About');

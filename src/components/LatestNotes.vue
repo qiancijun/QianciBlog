@@ -3,7 +3,7 @@
         <!-- <div class="latest">
             <img :src="LatestURL.url" ref='img_ref'/>
         </div> -->
-         <el-divider content-position="left">The Latest Notes</el-divider>
+         <el-divider content-position="left">The Categories</el-divider>
          
     </div>
 </template>
@@ -20,6 +20,7 @@ export default {
 
 <style lang="less" scoped>
 .latestNotes-container {
+
     .latest {
         width: 3rem;
         height: 1.7rem;
