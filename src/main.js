@@ -8,10 +8,8 @@ import 'mavon-editor/dist/css/index.css';
 import 'element-ui/lib/theme-chalk/index.css'
 import './plugins/flexible.js'
 import axios from 'axios';
-import vuescroll from "vuescroll"
-import "vuescroll/dist/vuescroll.css"
-import MarkdownItVue from 'markdown-it-vue'
-import 'markdown-it-vue/dist/markdown-it-vue.css'
+// import MarkdownItVue from 'markdown-it-vue'
+// import 'markdown-it-vue/dist/markdown-it-vue.css'
 import katex from "@iktakahiro/markdown-it-katex"
 import GLOBAL from './Global.vue'
 Vue.prototype.axios = axios;
@@ -30,8 +28,8 @@ import LatestNotes from './components/LatestNotes'
 Vue.component("LatestNotes", LatestNotes);
 import NotesCard from './components/NotesCard'
 Vue.component("NotesCard", NotesCard);
-import Star from './components/star'
-Vue.component("Star", Star)
+// import Star from './components/star'
+// Vue.component("Star", Star)
 import CategoryCard from './components/CategoryCard'
 import VueRouter from 'vue-router'
 Vue.component("CategoryCard", CategoryCard)
@@ -39,9 +37,8 @@ Vue.component("CategoryCard", CategoryCard)
 
 Vue.component("mavon-editor", mavonEditor)
 Vue.use(Element)
-Vue.use(vuescroll)
 Vue.use(mavonEditor);
-Vue.use(MarkdownItVue);
+// Vue.use(MarkdownItVue);
 mavonEditor.markdownIt.use(katex);
 
 Vue.config.productionTip = false

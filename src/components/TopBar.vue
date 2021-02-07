@@ -78,5 +78,10 @@
         )();
       }
     },
+    created() {
+      if (document.body.clientWidth < 700) {
+        this.isPhone = true;
+      }
+    }
   }
 </script>

@@ -18,10 +18,14 @@ export default {
     data() {
         return {
             imgList:[
-                {url:require('../assets/1.jpg')},
-                {url:require('../assets/3.jpg')},
-                {url:require('../assets/4.jpg')},
-                {url:require('../assets/8.jpg')},
+                {url: "https://qiancijun-images.oss-cn-beijing.aliyuncs.com/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/%E5%8D%9A%E5%AE%A2%E8%BD%AE%E6%92%AD%E5%9B%BE/1.jpg"},
+                {url: "https://qiancijun-images.oss-cn-beijing.aliyuncs.com/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/%E5%8D%9A%E5%AE%A2%E8%BD%AE%E6%92%AD%E5%9B%BE/3.jpg"},
+                {url: "https://qiancijun-images.oss-cn-beijing.aliyuncs.com/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/%E5%8D%9A%E5%AE%A2%E8%BD%AE%E6%92%AD%E5%9B%BE/4.jpg"},
+                {url: "https://qiancijun-images.oss-cn-beijing.aliyuncs.com/%E5%8D%9A%E5%AE%A2%E5%9B%BE%E7%89%87/%E5%8D%9A%E5%AE%A2%E8%BD%AE%E6%92%AD%E5%9B%BE/8.jpg"},
+                // {url:require('../assets/1.jpg')},
+                // {url:require('../assets/3.jpg')},
+                // {url:require('../assets/4.jpg')},
+                // {url:require('../assets/8.jpg')},
             ],
             img_height:''
         }

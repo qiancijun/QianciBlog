@@ -71,6 +71,7 @@
             overflow: hidden;
             background: #fff;
             break-inside: avoid;
+            
             cursor: pointer;
             .md {
                 // max-height: 300px;
@@ -79,7 +80,11 @@
             }
             .notesInfo {
                 font-size: 24px;
+                transition: .2s;
             }
+        }
+        .notesCard-Container :hover {
+            background-color: #fffacd;
         }
     }
     

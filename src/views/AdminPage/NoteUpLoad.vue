@@ -1,9 +1,9 @@
 <template>
     <div class="note-upload-container">
         <el-form :label-position="labelPosition" label-width="80px" :model="newArticle" :rules="rules" ref="addForm">
-            <el-form-item label="文章序号" prop="id">
+            <!-- <el-form-item label="文章序号" prop="id">
                 <el-input v-model="newArticle.id"></el-input>
-            </el-form-item>
+            </el-form-item> -->
             <el-form-item label="文章标题" prop="articleTitle">
                 <el-input v-model="newArticle.articleTitle"></el-input>
             </el-form-item>
@@ -20,7 +20,7 @@
                 <el-upload
                     class="upload-demo"
                     drag
-                    action="http://localhost:8079/uploadFile"
+                    action="http://101.133.134.12:8080/uploadFile"
                     :auto-upload="false"
                     :multiple="false"
                     accept=".md"

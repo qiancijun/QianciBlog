@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
+// resolve=>(require(['需要加载的路由的地址'])，resolve)
 const routes = [
   // {
   //   path: '/',
@@ -24,12 +25,14 @@ const routes = [
     name: 'MainPage',
     meta: {isAdmin: false},
     component: () => import('@/views/MainPage.vue')
+    // component: resolve => (require(['@/views/MainPage.vue']), resolve)
   },
   {
     path: '/NotesRound',
     name: 'NotesRound',
     meta: {isAdmin: false},
     component: () => import('@/views/NotesRound.vue')
+    // component: resolve => (require(['@/views/NotesRound.vue']), resolve)
   },
   {
     path: '/About',

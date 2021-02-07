@@ -126,7 +126,6 @@ export default {
                 username: _this.username,
                 password: _this.password
             }).then(res => {
-                console.log(res.data);
                 sessionStorage.setItem("Authorization", res.data.data);
                 if (res.data.data != null) {
                     _this.$router.replace('/Admin');

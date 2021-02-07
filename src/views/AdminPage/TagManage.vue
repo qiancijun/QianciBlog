@@ -92,7 +92,7 @@ export default {
     },
     created() {
         let _this = this;
-        _this.axios.get(_this.global.serverSrc + '/getAllTag').then((res) => {
+        _this.axios.get('/api/getAllTag').then((res) => {
             _this.tableData = res.data.data;
             _this.tableData.sort((a, b) => {
                 return a.id - b.id;
@@ -108,7 +108,6 @@ export default {
     methods: {
         handleDelete: function(index, row) {
             let _this = this;
-            console.log(row);
             _this.axios.post('/api/deleteTag', {
                 id: row.id,
                 tagName: row.tagName
